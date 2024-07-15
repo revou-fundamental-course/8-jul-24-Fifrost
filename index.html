@@ -3,9 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="js/scripts.js" defer></script>
+    <title>BMI Calculator</title>
 </head>
 <body>
-    
+    <header>
+        <h1>Calculator BMI</h1>
+    </header>
+    <main>
+        <div class="wrapper">
+            <p>Tinggi Badan (cm) :
+                <input type="text" id="tinggi_badan"><br><span id="tinggi_badan_error"></span>
+            </p>
+        
+            <p>Berat badan (kg) :
+                <input type="text" id="berat_badan"><br><span id="berat_badan_error"></span>
+            </p>
+
+            <p>Gender :
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+                <br><span id="gender_error"></span>
+            </p>
+
+            <button id="btn">Calculate</button>
+            <button id="reset_btn">Reset</button>
+            <p id="output"></p>
+        </div>
+    </main>
 </body>
 </html>
