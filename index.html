@@ -3,34 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link to external CSS file for styling -->
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!-- Link to external JavaScript file for functionality -->
     <script src="js/scripts.js" defer></script>
+    <!-- Title of the web page -->
     <title>BMI Calculator</title>
 </head>
 <body>
+    <!-- Bagian header berisi judul utama -->
     <header>
-        <h1>Calculator BMI</h1>
+        <h1>Kalkulator BMI</h1>
     </header>
+    <!-- Paragraf yang menjelaskan apa itu BMI dan pentingnya BMI -->
+    <p class="content">Body Mass Index atau Indeks Massa Tubuh dihitung berdasarkan berat dan tinggi badan. Berat badan ideal adalah impian semua orang. Tidak hanya memiliki bentuk tubuh yang menunjang penampilan, berat badan ideal juga menandakan kondisi tubuh yang sehat. Yuk, hitung sekarang di kalkulator BMI.</p>
+    <!-- Main content section -->
     <main>
         <div class="wrapper">
+            <!-- Input field for age with a corresponding error message span -->
+            <p>Usia (tahun) :
+                <input type="text" id="usia"><br><span id="usia_error"></span>
+            </p>
+            <!-- Input field for height with a corresponding error message span -->
             <p>Tinggi Badan (cm) :
                 <input type="text" id="tinggi_badan"><br><span id="tinggi_badan_error"></span>
             </p>
-        
+            <!-- Input field for weight with a corresponding error message span -->
             <p>Berat badan (kg) :
                 <input type="text" id="berat_badan"><br><span id="berat_badan_error"></span>
             </p>
 
+            <!-- Radio buttons for gender selection with corresponding labels and error message span -->
             <p>Gender :
                 <input type="radio" id="male" name="gender" value="male">
-                <label for="male">Male</label>
+                <label for="male">Laki-Laki</label>
                 <input type="radio" id="female" name="gender" value="female">
-                <label for="female">Female</label>
+                <label for="female">Perempuan</label>
                 <br><span id="gender_error"></span>
             </p>
 
-            <button id="btn">Calculate</button>
-            <button id="reset_btn">Reset</button>
+            <!-- Container for the buttons -->
+            <div class="button-container">
+                <!-- Button to calculate BMI -->
+                <button id="btn">Hitung</button>
+                <!-- Button to reset the form -->
+                <button id="reset_btn">Reset</button>
+            </div>
             <p id="output"></p>
         </div>
     </main>
