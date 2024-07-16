@@ -1,80 +1,87 @@
 /* Style for the body of the document */
 body {
-    margin: 0; /* Remove default margin */
-    padding: 0; /* Remove default padding */
-    color: #A68B80; /* Set the text color */
-    font-family: Arial, Helvetica, sans-serif; /* Set the font family */
-    background-color: #FDE4D0; /* Set the background color */
+  margin: 0;
+  padding: 0;
+  color: #7c6c66;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #FDE4D0;
 }
 
-
 /* Style for the main heading */
-h1{
-    text-align: center;
+h1 {
+  text-align: center;
 }
 
 /* Style for the content paragraph */
 .content {
-    max-width: 1000px; /* Set a maximum width */
-    margin: 0 auto; /* Center the content */
-    text-align: justify;/* Justify the text */
-    padding: 20px; /* Add some padding for better readability */
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: justify;
+  padding: 20px;
 }
 
 /* Style for error message spans */
-span{
-    color: red;
+span.error {
+  color: red;
 }
 
 /* Style for the wrapper div */
 .wrapper {
-    position: absolute; /* Position the wrapper absolutely */
-    top: 55%; /* Position it 55% from the top */
-    left: 50%; /* Center it horizontally */
-    transform: translate(-50%, -50%); /* Center it vertically and horizontally */
-    padding: 15px; /* Add padding inside the wrapper */
-    background: #A68B80; /* Set the background color */
-    border-radius: 38px; /* Round the corners */
-    color: white; /* Set the text color */
-    width: 80%; /* Set the width to 80% of the parent */
-    max-width: 400px; /* Set a maximum width */
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 15px;
+  background: #A68B80;
+  border-radius: 38px;
+  color: white;
+  width: 80%;
+  max-width: 400px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
 }
 
-/* Additional styling for the wrapper to create a shadow effect */
 .wrapper::before {
-    content: ''; /* Generate an empty content */
-    position: absolute; /* Position it absolutely */
-    left: -5%; /* Position it slightly outside the wrapper */
-    top: -5%; /* Position it slightly outside the wrapper */
-    background-color: rgba(114, 103, 89, 0.3); /* Set a semi-transparent background color */
-    width: 110%; /* Make it slightly larger than the wrapper */
-    height: 110%; /* Make it slightly larger than the wrapper */
-    box-shadow: 0px 0px 166px -31px rgba(0, 0, 0, 0.15); /* Add a shadow effect */
-    border-radius: 60px; /* Round the corners more than the wrapper */
-    z-index: -1; /* Place it behind the wrapper */
+    content: ''; 
+    position: absolute; 
+    left: -5%; 
+    top: -5%; 
+    background-color: rgba(114, 103, 89, 0.3); 
+    width: 110%; 
+    height: 110%;
+    box-shadow: 0px 0px 166px -31px rgba(0, 0, 0, 0.15); 
+    border-radius: 60px; 
+    z-index: -1; 
+}
+
+/* Style for input groups */
+.input-group {
+  margin-bottom: 15px;
 }
 
 /* Style for input fields */
-input{
-    outline: none; /* Remove the default outline */
-    border: none; /* Remove the default border */
-    padding: 5px; /* Add padding inside the input fields */
-    border-radius: 5px; /* Round the corners */
+.input-field {
+  outline: none;
+  border: none;
+  padding: 5px;
+  border-radius: 5px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 /* Style for buttons */
 button {
-    color: #926E68; /* Set the text color */
-    padding: 10px; /* Add padding inside the buttons */
-    background: #FDE4D0; /* Set the background color */
-    border: 2px solid #926E68; /* Add a border with a specific color */
-    cursor: pointer; /* Change the cursor to pointer on hover */
-    border-radius: 5px; /* Round the corners */
+  color: #926E68;
+  padding: 10px;
+  background: #FDE4D0;
+  border: 2px solid #926E68;
+  cursor: pointer;
+  border-radius: 5px;
 }
 
 /* Style for the button container */
 .button-container {
-    display: flex; /* Use flexbox for layout */
-    gap: 10px; /* Add a gap between buttons */
-    margin-top: 10%; /* Add margin to the top */
+  display: flex;
+  gap: 10px;
+  margin-top: 5%;
 }
+
