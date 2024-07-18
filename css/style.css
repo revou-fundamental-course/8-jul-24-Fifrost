@@ -28,7 +28,7 @@ span.error {
 /* Style for the wrapper div */
 .wrapper {
   position: absolute;
-  top: 60%;
+  top: 65%;
   left: 50%;
   transform: translate(-50%, -50%);
   padding: 15px;
